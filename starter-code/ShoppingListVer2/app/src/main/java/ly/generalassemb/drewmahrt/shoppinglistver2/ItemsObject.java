@@ -1,14 +1,14 @@
 package ly.generalassemb.drewmahrt.shoppinglistver2;
 
 /**
- * Created by jay on 10/25/16.
- */
+ * Created by jay on 10/25/16. */
 
 public class ItemsObject {
     String mItemName, mDescription, mType;
     String mPrice;
 
     public ItemsObject(String mItemName, String mDescription, String mType, String mPrice) {
+
         this.mItemName = mItemName;
         this.mDescription = mDescription;
         this.mType = mType;

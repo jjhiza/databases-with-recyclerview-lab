@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerView)findViewById(R.id.recyclerView);
 
-        LinearLayoutManager llm = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL,false);
+        LinearLayoutManager layout_manager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL,false);
 
 
 
         List<ItemsObject> list = SQLiteOpenHelper.getInstance(this).getAllAsList();
 
-        mRecyclerView.setLayoutManager(llm);
+        mRecyclerView.setLayoutManager(layout_manager);
 
         mRecyclerView.setAdapter(new ListAdapter(list));
 
